@@ -24,4 +24,12 @@ Enter an integer:-1
 The largest number you entered is 92
 """
 
+myList=[]
+dCount = myList.count(-1)
+while myList.count(-1) == 0:
+    integer=(input("Ente an integer:")).strip()
+    integer=int(integer)
+    myList.append(integer)
+myList.sort()
+print('The largest number you entered is '+str(myList[-1]))
 

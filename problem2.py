@@ -25,4 +25,14 @@ word not in list
 """
 
 fruit = ["apple","cherry","kiwi","apple","banana","strawberry","kiwi","blueberry","kiwi"]
-
+print(fruit)
+Word=(input('Enter a word from the list: ')).strip()
+dCount = fruit.count(Word)
+if dCount != 0:
+    while fruit.count(Word) != 0:
+        fruit.remove(Word)
+    print(fruit)
+else:
+    fruit.append(Word)
+    print(fruit)
+    
